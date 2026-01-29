@@ -12,9 +12,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: open-webui
+    container_name: open-webui-custom
     volumes:
-      - open-webui:/app/backend/data
+      - open-webui-custom:/app/backend/data
     depends_on:
       - ollama
     ports:
@@ -29,4 +29,4 @@ services:
 
 volumes:
   ollama: {}
-  open-webui: {}
+  open-webui-custom: {}
