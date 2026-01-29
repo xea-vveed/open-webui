@@ -23,6 +23,7 @@ services:
     environment:
       - 'OLLAMA_BASE_URL=http://ollama:11434'
       - 'WEBUI_SECRET_KEY='
+      - 'DATABASE_URL=postgresql://postgres:900592@192.168.0.30:5432/openwebui'
     extra_hosts:
       - host.docker.internal:host-gateway
     restart: unless-stopped
